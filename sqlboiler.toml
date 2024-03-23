@@ -1,0 +1,34 @@
+output = "models"
+wipe = true
+
+[sqlite3]
+dbname = "metadata.db"
+
+blacklist = [
+    "annotations_dirtied",
+    "annotations_fts",
+    "annotations_fts_config",
+    "annotations_fts_data",
+    "annotations_fts_docsize",
+    "annotations_fts_idx",
+    "annotations_fts_stemmed",
+    "annotations_fts_stemmed_config",
+    "annotations_fts_stemmed_data",
+    "annotations_fts_stemmed_docsize",
+    "annotations_fts_stemmed_idx",
+    "tag_browser_series",
+    "tag_browser_filtered_authors",
+    "tag_browser_filtered_publishers",
+    "tag_browser_filtered_ratings",
+    "tag_browser_filtered_series",
+    "tag_browser_filtered_tags",
+    "meta",
+    "metadata_dirtied",
+]
+
+[[aliases.tables]]
+name = "series"
+up_plural = "BookSeries"
+up_singular = "ABookSeries"
+down_plural = "bookSeries"
+down_singular = "aBookSeries"
